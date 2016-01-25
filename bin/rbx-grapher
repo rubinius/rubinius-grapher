@@ -1,0 +1,7 @@
+#!/usr/bin/env rbx
+
+$:.unshift File.expand_path("../lib", __dir__)
+
+require "rubinius/grapher"
+
+Rubinius::Grapher.graph
