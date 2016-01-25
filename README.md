@@ -10,7 +10,12 @@ Participation in this project is governed by the Rubinius [Code of Conduct](http
 
 ## Usage
 
-    $ rbx-grapher metrics.dat
+```
+$ rbx -Xsystem.metrics.target=./metrics.dat \
+      -Xsystem.metrics.interval=500 \
+      some_script.rb
+$ rbx-grapher metrics.dat
+```
 
 
 ## License
